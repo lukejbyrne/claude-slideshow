@@ -367,8 +367,6 @@
     else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); goTo(current - 1); }
   });
 
-  document.addEventListener('click', (e) => { if (drawMode) return; if (e.target.closest('.draw-toolbar, .dots, button')) return; if (e.clientX > window.innerWidth / 2) { goTo(current + 1); } else { goTo(current - 1); } });
-
   let touchStartX = 0;
   document.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; });
   document.addEventListener('touchend', (e) => { if (drawMode) return; const diff = touchStartX - e.changedTouches[0].clientX; if (Math.abs(diff) > 50) { diff > 0 ? goTo(current + 1) : goTo(current - 1); } });

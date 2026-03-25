@@ -51,11 +51,14 @@
 
 ## Slide Types (reusable patterns)
 1. **Title slide** — headline + subtitle, nothing else
-2. **Feature cards** — headline + 3 cards (emoji, title, description) + bottom text
-3. **Comparison** — headline + 2 big cards with tags + optional bottom text
-4. **Checklist comparison** — headline + 2 cards with ✓ lists
-5. **Code/file mock** — headline + subtitle + code block card
-6. **Transition** — small uppercase label + big headline + subtitle
+2. **Bullet list** — headline + emoji-bullet points floating freely (no card wrappers). Clean and open. Use for feature descriptions, simple lists, or any time cards feel heavy
+3. **Feature cards** — headline + 3 cards (emoji, title, description) + bottom text. Use sparingly — only when each point needs a title AND a description
+4. **Comparison** — headline + 2 big cards with tags + optional bottom text. Cards earn their place here because side-by-side needs visual separation
+5. **Checklist comparison** — headline + 2 cards with check lists
+6. **Code/file mock** — headline + subtitle + styled code block card
+7. **Transition** — small uppercase label + big headline + subtitle
+
+**Cards vs bullet lists:** Default to bullet lists. Only use cards for comparisons (side-by-side) or structured data that needs a title + description. If it's just points under a headline, bullet list breathes more and looks better on camera.
 
 ## Subtle Details
 - Grain overlay via inline SVG filter (very subtle, opacity 0.5)

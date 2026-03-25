@@ -85,6 +85,11 @@
     text-underline-offset: 6px; text-decoration-thickness: 2px;
   }
 
+  /* ─── BULLET LIST ─── */
+  .bullet-list { margin-top: 40px; display: inline-flex; flex-direction: column; gap: 14px; }
+  .bullet-list .bullet { display: flex; align-items: baseline; gap: 12px; font-size: 15px; color: var(--cream); font-weight: 400; line-height: 1.5; }
+  .bullet-list .bullet .b-icon { font-size: 16px; flex-shrink: 0; }
+
   /* ─── CARDS ─── */
   .cards-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 48px; max-width: 900px; width: 100%; }
   .cards-2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; margin-top: 48px; max-width: 780px; width: 100%; }
@@ -222,25 +227,13 @@
     <p class="subtitle">A short subtitle that sets the context.</p>
   </div>
 
-  <!-- Type: Feature cards (3-up) -->
+  <!-- Type: Bullet list (clean, no cards) -->
   <div class="slide" data-slide="1">
     <h1>Three <strong>Key Points</strong></h1>
-    <div class="cards-3">
-      <div class="card">
-        <span class="emoji">🎯</span>
-        <div class="card-title">First Point</div>
-        <div class="card-desc">Brief description of this feature or concept</div>
-      </div>
-      <div class="card">
-        <span class="emoji">⚡</span>
-        <div class="card-title">Second Point</div>
-        <div class="card-desc">Brief description of this feature or concept</div>
-      </div>
-      <div class="card">
-        <span class="emoji">🔒</span>
-        <div class="card-title">Third Point</div>
-        <div class="card-desc">Brief description of this feature or concept</div>
-      </div>
+    <div class="bullet-list">
+      <div class="bullet"><span class="b-icon">🎯</span> First point — a short description</div>
+      <div class="bullet"><span class="b-icon">⚡</span> Second point — another short description</div>
+      <div class="bullet"><span class="b-icon">🔒</span> Third point — one more description</div>
     </div>
     <p class="bottom-text"><em>An editorial takeaway line.</em></p>
   </div>
